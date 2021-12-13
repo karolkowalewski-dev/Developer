@@ -1,0 +1,80 @@
+
+
+.portfolio-section {
+    
+    .portfolio {
+        margin: 98px 180px 8px;
+        @include responsive(laptop) {
+            margin: 98px 80px 8px;     
+        }
+
+        @include responsive(tablet) {
+            margin: 98px 80px 8px;
+        }
+
+        @include responsive(mobile) {
+            margin: 98px 32px 8px;
+        }
+    }
+    
+    .title {
+        @include h2();
+        @include responsive(laptop) {
+            font-size: 28px;
+        }
+    }
+
+    .three-box {
+        display: flex;
+    
+        @include responsive(tablet) {
+            flex-direction: column;
+        }
+
+        @include responsive(mobile) {
+            flex-direction: column;
+        }
+    }
+
+    .white-space{
+        @include responsive(tablet) {
+            display: flex;
+        }
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .sizing {
+        width: 100%;       
+        transition: transform .2s;
+        @include responsive(desktop) {
+            &:hover {
+                transform: scale(1.1);
+            }    
+        }
+
+        @include responsive(laptop) {
+            &:hover {
+                transform: scale(1.1);   
+            }
+        
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

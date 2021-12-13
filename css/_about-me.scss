@@ -1,0 +1,137 @@
+
+.about-me {
+    width: 100%;
+    padding: 140px 0;
+    display: flex;
+    @include responsive(tablet) {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    @include responsive(mobile) {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    
+    .description-text {
+        @include flexCenter();    
+        flex-direction: column;
+    }
+
+    .first-row {
+        width: 60%;
+        @include responsive(tablet) {
+            width: 100%;
+            margin: 120px 0;
+        }
+        
+        @include responsive(mobile) {
+            width: 100%;
+            margin: 48px 0;
+        }
+    }
+    
+    .title {
+        @include h2();
+        @include responsive(laptop) {
+            font-size: 28px;
+        }
+    }
+
+    .me {
+        margin: 0 180px 8px;
+        @include responsive(laptop) {
+            margin: 0 80px 8px;
+        }
+
+        @include responsive(tablet) {
+            margin: 0 100px 8px;
+        }
+
+        @include responsive(mobile) {
+            margin: 0 32px 8px;
+        } 
+    }
+
+    .description {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.6;
+        text-align: left;
+        color: $main-color;
+        margin: 0 180px;
+        @include responsive(laptop) {
+            margin: 0px 80px;
+        }
+
+        @include responsive(tablet) {
+            margin: 0px 100px;
+        }
+
+        @include responsive(mobile) {
+            margin: 0px 32px;
+        } 
+    }
+    
+    .second-row {
+        width: 40%;
+        @include flexCenter();
+        align-items: center;
+        @include responsive(tablet) {
+            width: 100%;
+        }
+
+        @include responsive(mobile) {
+            width: 100%;
+        } 
+    }
+
+    .avatar {
+        
+        @include responsive(tablet) {
+            @include flexCenter();
+        }
+
+        @include responsive(mobile) {
+            @include flexCenter();
+        } 
+    }
+
+    .my-photo {
+        width: 48%;
+        margin: 100px;
+        @include responsive(tablet) {
+            margin-top: 32px;
+        }
+
+        @include responsive(mobile) {
+            margin: 32px;
+        }
+    }
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+

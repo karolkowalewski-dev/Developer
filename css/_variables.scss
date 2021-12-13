@@ -1,0 +1,52 @@
+    
+    $main-color: #081826;
+    $accent-color: #30f2f2;
+    $contrast-color: #f4f4f4;
+    $white-color: #ffffff;
+
+    $main-fonts: Poppins;
+   
+    @mixin body {
+        font-family: $main-fonts;
+        @include reset();
+    }
+        
+    @mixin reset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    @mixin flexCenter {
+        display: flex;
+        justify-content: center;
+    }
+
+    @mixin h1 {
+        width: 800px;
+        height: 183px;
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: $white-color;
+    }
+
+    @mixin  h2 {
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: left;
+        color: $main-color;
+    }
+
+    @mixin hoverOff {
+        @media not all and (hover: none) {
+            &:hover {
+                @content;
+            }
+        }
+    }
+    
+    

@@ -1,0 +1,107 @@
+
+
+
+.skills {
+    background-color: $contrast-color;
+    width: 100%;
+    height: 565px;
+    display: flex;
+    align-items: center;
+    @include responsive(tablet) {
+        height: unset;
+    }
+
+    @include responsive(mobile) {
+        height: unset;
+    }
+
+    .technology {
+        width: 100%;
+    }
+
+    .row-skills {
+        @include flexCenter();
+        margin: 0 180px;
+        @include responsive(laptop) {
+            margin: 0 80px;
+        }
+        
+        @include responsive(tablet) {
+                flex-direction: column;
+                margin: 40px 24px;
+        }
+
+        @include responsive(mobile) {
+            flex-direction: column;
+            margin: 40px 24px;
+        }
+    }
+
+    .box-list {
+        padding: 60px;
+        background-color: $white-color;
+        flex-grow: 1;
+        border-right: 16px solid $contrast-color;
+        @include responsive(laptop) {
+            padding: 40px;
+        }
+
+        @include responsive(tablet) {
+            border-bottom: 16px solid $contrast-color;
+            border-right: 0;
+        }
+
+        @include responsive(mobile) {
+            border-bottom: 16px solid $contrast-color;
+            border-right: 0;
+        }
+    }
+    
+    .coding-skills {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 2.4;
+        text-align: left;
+        color: $main-color;
+        @include responsive(laptop) {
+            font-size: 16px;
+        }
+    }
+
+    hr {
+        border: 0.5px solid $main-color;
+        opacity: .1;
+        margin: 24px 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
