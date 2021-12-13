@@ -24,7 +24,7 @@
 
     @mixin h1 {
         width: 800px;
-        height: 183px;
+        height: 60px;
         font-size: 60px;
         font-weight: 600;
         line-height: 1.5;
@@ -39,6 +39,17 @@
         line-height: 1.5;
         text-align: left;
         color: $main-color;
+    }
+
+    @mixin h3 {
+        width: 300px;
+        height: 120px;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: $white-color;
     }
 
     @mixin hoverOff {
